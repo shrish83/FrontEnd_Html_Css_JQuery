@@ -1,0 +1,22 @@
+.simple_cal{
+    width: 169px;
+    height: 106px;
+    border: 2px solid rgb(49, 37, 37);
+    padding: 10px;
+    background-color: darkgray;
+    border-radius: 25px;
+
+}
+#div{
+    height: 20px;
+}
+.button, #eql{
+    background-color: green;
+    color: white;
+    padding: 1.5px 10px;
+    border-radius: 25px;
+
+}
+#row1, #row2, #row3, #row4{
+    padding: 0.3px;
+}
