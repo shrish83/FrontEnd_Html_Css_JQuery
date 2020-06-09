@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>A Simple Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="formvalidate.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Simple Form</h2>
+            <!--Button to open the form-->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalForm">Join Us!</button>
+
+            <!--The Modal Form-->
+        <div class="modal row" id="myModalForm">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!--Modal Form Header-->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Become a Member!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--Modal Form Body-->
+                    <div class="modal-body col-sm-8">
+                        <label for="name">Name:</label><br>
+                        <input type="text" name="name" class="name" placeholder="Full Name" required >
+                        <br><br>
+                        <label for="gender">Gender:</label><br>
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Femle
+                        <input type="radio" name="gender"> Other
+                        <br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" class="email" placeholder="abc@gmail.com">
+                        <br> <br>
+                        <label for="password">Password:</label><br>
+                        <input type="password" name="password" class="password" placeholder="*****">
+                        <br><br>
+                        <label for="contact">Contact:</label><br>
+                        <input type="text" name="contact" class="contact" placeholder="Contact">
+                        <br><br>
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                    </div>
+
+                    <!-- Modal Form footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
