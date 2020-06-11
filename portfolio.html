@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My PortFolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #f1f1f1;
+                padding: 20px;
+                font-family: Arial;
+            }
+            /* Center website */
+            .main {
+                max-width: 1000px;  /*size of the main content screen*/
+                margin: auto;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            .row {
+                margin: 8px -16px;
+            }
+
+            /* Add padding b/w each column */
+            .row,
+            .row > .column {
+                padding: 8px;
+            }
+            /* Create equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 50%;
+            }
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+               }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+               }
+            }
+        </style>
+    </head>
+    <body>
+        <!--Main Website-->
+        <div class="main">
+
+            <h1><strong>Shrishti Vaish</strong></h1>
+            <p>DU Graduate 2020 <br> B.Sc (Hons) Computer Science</p>
+            <hr>
+
+            <p><strong>MY PORTFOLIO</strong><br>
+            Browse through different icons for further insight!
+            </p>
+
+            <!--PortFolio Gallery Grid-->
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <a href="https://github.com/shrish83"><img src="github-mark.png" alt="Github" style="width: 500px;"  ></a>
+                        <h3 style="align-self: baseline;">My Github Portfolio</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <a href="https://www.linkedin.com/in/shrishti-vaish/"><img src="linked.png" alt="LinkedIn" style="width: 500px; height: 260px;"  ></a>
+                        <h3 style="align-self: baseline;">My LinkedIn Portfolio</h3>
+                    </div>
+                </div>
+                <!--End Grid-->
+            </div>
+        </div>
+    </body>
+</html>
